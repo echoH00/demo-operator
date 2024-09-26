@@ -1,0 +1,16 @@
+apiVersion: echoh.wonderscloud.com/v1alpha1
+kind: MyApp
+metadata:
+  name: myapp-sample
+spec:
+  size: 1
+  image: nginx:latest
+  imagePullPolicy: IfNotPrensent
+  #resources:
+ # 	requests:
+  #	  memory: "64Mi"
+ # 	  cpu: "250m"
+  ports:
+  - port: 8080
+    targetPort: 80
+    nodePort: 30080 

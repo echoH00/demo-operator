@@ -1,0 +1,9 @@
+apiVersion: echoh.wonderscloud.com/v1alpha1
+kind: MyApp
+metadata:
+  labels:
+    app.kubernetes.io/name: opdemo
+    app.kubernetes.io/managed-by: kustomize
+  name: myapp-sample
+spec:
+  # TODO(user): Add fields here
